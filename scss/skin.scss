@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+	outline: none !important;
+	padding: 0;
+	margin: 0;
+}
+.bitmap {
+	background: url(http://kvikmyndir.is/frettir/wp-content/uploads/2016/05/angry-2.jpg);
+	background-size: cover;
+
+	canvas {
+		position: absolute;
+		top: 0; left: 0;
+	}
+}
+
+.main {
+	background: #e5e5e5;
+	font-family: Tahoma, sans-serif;
+	font-size: 16px;
+
+	article {
+		max-width: 700px;
+		margin: 0 auto;
+		padding: 15px;
+	}
+
+	a {
+		display: inline-block;
+		text-decoration: none;
+		color: #fff;
+		background: #369;
+		padding: 10px 20px;
+		border-radius: 2px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+		transition: .3s;
+		cursor: pointer;
+		margin: 0 10px 15px 0;
+		text-transform: uppercase;
+		font-size: 13px;
+		letter-spacing: .05em;
+		font-weight: bold;
+		&:hover {
+			background: lighten(#369, 5);
+			box-shadow: 0 2px 5px rgba(0,0,0,.5);
+		}
+	}
+
+	p {
+		margin: 15px 0;
+		border-left: 2px solid #ddd;
+		padding: 0 0 0 15px;
+		color: #999;
+		font-size: 14px;
+	}
+
+	header {
+		background: #369;
+		color: #fff;
+		padding: 50px 15px;
+		text-align: center;
+		font-weight: 300;
+		box-shadow: 0 5px 10px rgba(0,0,0,.3);
+		font-size: 32px;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+
+	section {
+		background: #fff;
+		border-radius: 2px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.1);
+		margin-bottom: 15px;
+		padding: 15px 15px 0;
+		transition: .2s;
+		cursor: default;
+		h2 {
+			font-size: 20px;
+			margin: 0 0 15px;
+		}
+		&:hover {
+			background: #f0f7ff;
+			box-shadow: 0 2px 5px rgba(0,0,0,.1);
+		}
+	}
+
+}
